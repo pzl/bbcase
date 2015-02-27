@@ -92,11 +92,11 @@ module top(){
 
 
 		//main header
-		translate([-33/2-.6,bblength/2-8.6-4.3-.6-2,upper+height-1]){
-			cube([34.2,9.8+2,height+2]);
+		translate([-33/2-.6,bblength/2-8.6-4.3-.6-4,upper+height-1]){
+			cube([34.2,9.8+4,height+2]);
 		}
 		//viewing triangle for main header lableing
-		translate([-33/2-.6,bblength/2-8.6-4.3-.6-2-height,upper+height-.1]){
+		translate([-33/2-0.6,bblength/2-8.6-4.3-.6-4-height,upper+height-.1]){
 			polyhedron(points=[
 					[0,0,0],
 					[0,sz,0],
@@ -228,9 +228,7 @@ module top(){
 //translate([0,0,height])
 //bb();
 
-color("ivory")
 bottom();
-color("ivory")
 
 rotate(a=[180,0,0])
 translate([-bbwidth-sidewall*2-10,0,-10])
